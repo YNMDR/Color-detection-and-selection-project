@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 import color
 
-resized_image=np.zeros((720,512,0))
+resized_image=np.zeros((720,512,3))
 
 def call_back(event,x,y,flags,params):
     if event==cv2.EVENT_LBUTTONDOWN or event==cv2.EVENT_RBUTTONDOWN:
