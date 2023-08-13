@@ -17,4 +17,4 @@
 
 <h1>Selecting the desired color portion from an image:</h1>
  <p>Here when we click on a particular color in an image all the corresponding color portion will be displayed in a new window</p>
-      <cen><img src="https://github.com/YNMDR/Color-detection-and-extraction-project/blob/main/images/Screenshot%202023-08-13%20193216.png",alt="Image not available"></cen>
+      <cen><img src="https://github.com/YNMDR/Color-detection-and-selection-project/blob/main/images/Screenshot%202023-08-14%20005903.png",alt="Image not available"></cen>
