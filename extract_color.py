@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 import color
 
-resized_image=np.zeros((720,512))
+resized_image=np.zeros((720,512,0))
 
 def call_back(event,x,y,flags,params):
     if event==cv2.EVENT_LBUTTONDOWN or event==cv2.EVENT_RBUTTONDOWN:
@@ -13,7 +13,7 @@ def call_back(event,x,y,flags,params):
         lower_range = np.array([blue_val-30, green_val-30, red_val-30])
         upper_range = np.array([blue_val+30, green_val+30, red_val+30])
         mask = cv2.inRange(resized_image, lower_range, upper_range)
-        print(color.get_color(red_val, green_val, blue_val))
+        # print(color.get_color(red_val, green_val, blue_val))
         ext_img=cv2.bitwise_and(resized_image,resized_image,mask=mask)
         cv2.imshow("choosen color portion",ext_img)
 
